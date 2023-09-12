@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> strings</p>
+    <script>
+        var text ="hello world"
+        
+        console.log(text.charAt(1))
+        //shows the second letter of the word///
+         console.log(text.charCodeAt(0))
+        //shows of the uni code of the first character///
+          var text2 = "'mohamed'"
+          console.log(text.concat(text2))
+        //for concatenate two strings///
+          console.log(text.endsWith("world"))
+        // shows if a string ends with a specified value///
+          console.log(text.includes("world"))
+        //shows if a string contains a  specified value//
+           console.log(text.indexOf("hello"))
+        //shows the index of the value
+           console.log(text.lastIndexOf("world"))
+        // shows the last index of value
+           console.log(text.length)
+        // shows the length of value///
+           console.log(text.localeCompare(text2))
+        // compares two strings in the current locale
+           console.log(text.match("wor"))
+        // searches a string for a value
+           console.log(text.normalize() === text2.normalize())
+        // shows a string that contains the unicode normalization as specified//
+           console.log(text.padEnd(25,"k"))
+        //padEnd a string with another string//
+           console.log(text.padStart(25,"k"))
+        //padStart a string with another string//
+           console.log(text.repeat(2))
+        // repets a string//
+           console.log(text.replace("world","yousef"))
+        //replace a string with another string//
+           console.log(text.search("world"))
+        // search a string index//
+           console.log(text.slice(0,5))
+        // extracts a part of a string///
+           const myname = text.split(" ")
+           console.log(myname[1])
+        // splits a string into an array///
+           console.log(text.startsWith("hello"))
+        // shows if a string starts with specified string///
+           console.log(text.substring(0,5))
+        //extracts a part of a string///
+           console.log(text.toLocaleLowerCase())
+        // to converts a string into a lowercase///
+           console.log(text.toLocaleUpperCase())
+        // to converts a string into uppercase
+           console.log(text.toString())
+        // retuns the content of a string ///
+          var text3 ="   hello world"
+           console.log(text3.trim())
+        //removes whitespace from both sides of a string///
+           var text4 ="hello world      "
+           console.log(text4.trimEnd())
+        // removes whitespace from the end of a string///
+           console.log(text.valueOf())
+        // returns the primitive value of a string///
+           console.log(text.big())
+        // the big method is deprecated in javascript///
+ </script>
+</body>
+</html>
